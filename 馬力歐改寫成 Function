@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void a (int x, int height);
+
+int main() {
+    int height;
+    cout << "Enter height:";
+    cin >> height;
+    for (int x = 2; x < height + 2; x++) {
+        a(x, height);
+    }
+}
+
+void a (int x, int height) {
+     for (int y = height + 1; y > x; y--) {
+            cout << " ";
+        }
+        for (int y = 1; y < x; y++) {
+            cout << "#";
+        }
+        cout << " " ;
+        for (int y = 1; y < x; y++) {
+            cout << "#";
+        }
+        cout << "\n";
+}
